@@ -9,6 +9,13 @@ function App() {
  const addvalue = () => {
   setCounter(prev => (prev >= 20 ? 20 : prev + 1))
 }
+// when i want to increase the value more than 1 on one click
+    //  setCounter(prevCounter =>prevCounter+1 ) 
+    //  setCounter(prevCounter =>prevCounter+1 ) 
+    //  setCounter(prevCounter =>prevCounter+1 ) 
+    //  setCounter(prevCounter =>prevCounter+1 ) 
+    //  ab ek baar click krne ke baad seedhe 19 aayega 16 nhi
+
 
  const removevalue=()=>{
   setCounter(prev=>(prev<=0 ? 0:prev-1))
