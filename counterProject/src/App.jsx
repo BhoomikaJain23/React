@@ -4,11 +4,29 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  let [counter, setCounter] = useState(15)
+
+ const addvalue=()=>{
+  setCounter(counter + 1)
+ }
+
+ const removevalue=()=>{
+  setCounter(counter - 1)
+ }
+
+
 
   return (
     <>
-     <h1>Chai aur react</h1>
+     <h1>React Counter</h1>
+     <h2>Counter Value:{counter}</h2>
+     <button
+     onClick= {addvalue}
+     >Add value :{counter}</button>
+     <br />
+     <button
+      onClick={removevalue}
+      >Remove value:{counter}</button>
     </>
   )
 }
