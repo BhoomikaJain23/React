@@ -6,12 +6,12 @@ import './App.css'
 function App() {
   let [counter, setCounter] = useState(15)
 
- const addvalue=()=>{
-  setCounter(counter + 1)
- }
+ const addvalue = () => {
+  setCounter(prev => (prev >= 20 ? 20 : prev + 1))
+}
 
  const removevalue=()=>{
-  setCounter(counter - 1)
+  setCounter(prev=>(prev<=0 ? 0:prev-1))
  }
 
 
